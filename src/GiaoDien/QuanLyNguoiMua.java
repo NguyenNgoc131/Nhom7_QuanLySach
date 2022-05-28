@@ -169,6 +169,9 @@ public class QuanLyNguoiMua extends javax.swing.JFrame {
             }
         });
         tableNguoiMua.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                tableNguoiMuaKeyPressed(evt);
+            }
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 tableNguoiMuaKeyReleased(evt);
             }
@@ -176,6 +179,12 @@ public class QuanLyNguoiMua extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tableNguoiMua);
 
         jLabel2.setText("Ma nguoi mua");
+
+        txtMaNguoiMua.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMaNguoiMuaActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Ten nguoi mua");
 
@@ -391,6 +400,14 @@ public class QuanLyNguoiMua extends javax.swing.JFrame {
         tableNguoiMua.setRowSorter(timKiem);
         timKiem.setRowFilter(RowFilter.regexFilter(txtTimKiem.getText()));
     }//GEN-LAST:event_btnTimKiemActionPerformed
+
+    private void tableNguoiMuaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tableNguoiMuaKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tableNguoiMuaKeyPressed
+
+    private void txtMaNguoiMuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaNguoiMuaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMaNguoiMuaActionPerformed
 
     /**
      * @param args the command line arguments
